@@ -197,6 +197,7 @@ def no_hybrid_phased_packing(method):
                 test_traces[name].box_height = k
                 test_traces[name] = format_box(test_traces[name], miss_cost=s)
 
+    print('k =', k)
     avg_complete = 0
     for name in trace_names:
         print(name + ',' + str(test_traces[name].completion_time))
